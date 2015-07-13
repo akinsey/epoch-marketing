@@ -199,7 +199,7 @@
 
 
         <h5 class="clear-fix" id="auth">Auth</h5>
-        <h6 class="clear-fix" id="accountrecoveryreq">Auth - Recover Account <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="accountrecoveryreq">Auth - Recover Account <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to recover an account by username or email. Sends an email with a URL to visit to reset the user&#39;s account password.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/recover/:query</pre>
@@ -276,7 +276,7 @@
 
 
 
-        <h6 class="clear-fix" id="accountrecoveryreset">Auth - Reset Account Password <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="accountrecoveryreset">Auth - Reset Account Password <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to reset an account password after recovering an account.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/reset</pre>
@@ -371,7 +371,7 @@
 
 
 
-        <h6 class="clear-fix" id="accountrecoverytoken">Auth - Validate Account Reset Token <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="accountrecoverytoken">Auth - Validate Account Reset Token <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to check the validity of the reset token. Verifys that the reset token is for the correct user and that it is not expired.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/reset/:username/:token/validate</pre>
@@ -446,7 +446,7 @@
 
 
 
-        <h6 class="clear-fix" id="authenticate_user">Auth - Authenticate User <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="authenticate_user">Auth - Authenticate User <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to check the logged in user&#39;s authentication.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/authenticate</pre>
@@ -509,7 +509,7 @@
 
 
 
-        <h6 class="clear-fix" id="confirm_account">Auth - Confirm Account <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="confirm_account">Auth - Confirm Account <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to confirm a newly registered account when account verification is enabled in the admin panel.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/confirm</pre>
@@ -610,7 +610,7 @@
 
 
 
-        <h6 class="clear-fix" id="email_availability">Auth - Email Availability <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="email_availability">Auth - Email Availability <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to check if an email is available when registering a new account.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/register/email/:email</pre>
@@ -657,7 +657,7 @@
 
 
 
-        <h6 class="clear-fix" id="login">Auth - Login <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="login">Auth - Login <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to log a user into their account.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/login</pre>
@@ -752,7 +752,7 @@
 
 
 
-        <h6 class="clear-fix" id="logout">Auth - Logout <pre class="code-block delete">DELETE</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="logout">Auth - Logout <pre class="code-block delete">DELETE</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to log a user out of their account.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/logout</pre>
@@ -811,7 +811,7 @@
 
 
 
-        <h6 class="clear-fix" id="registernoverify">Auth - Register (w/o account verification) <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="registernoverify">Auth - Register (w/o account verification) <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to register a new account with account verification disabled in admin settings.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/register</pre>
@@ -910,7 +910,7 @@
 
 
 
-        <h6 class="clear-fix" id="registerverify">Auth - Register (w/ account verification) <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="registerverify">Auth - Register (w/ account verification) <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to register a new account with account verification enabled in admin settings. This will send an email to the user with the account verification link.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/register</pre>
@@ -1009,7 +1009,7 @@
 
 
 
-        <h6 class="clear-fix" id="username_availability">Auth - Username Availability <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="username_availability">Auth - Username Availability <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to check if a username is available when registering a new account.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/register/username/:username</pre>
@@ -1056,7 +1056,7 @@
 
 
         <h5 class="clear-fix" id="boards">Boards</h5>
-        <h6 class="clear-fix" id="allboard">Boards - All <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="allboard">Boards - All <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to find all boards.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/boards/all</pre>
@@ -1101,7 +1101,7 @@
 
 
 
-        <h6 class="clear-fix" id="createboard">Boards - Create <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="createboard">Boards - Create <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to create a new board</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -1202,7 +1202,7 @@
 
 
 
-        <h6 class="clear-fix" id="deleteboard">Boards - Delete <pre class="code-block delete">DELETE</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="deleteboard">Boards - Delete <pre class="code-block delete">DELETE</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to delete an existing board from the forum.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -1297,7 +1297,7 @@
 
 
 
-        <h6 class="clear-fix" id="findboard">Boards - Find <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="findboard">Boards - Find <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to find a board.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/boards/:id</pre>
@@ -1408,7 +1408,7 @@
 
 
 
-        <h6 class="clear-fix" id="importboard">Boards - Import <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="importboard">Boards - Import <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to import a board. Currently only SMF is supported for import.</p>
 
         <p><strong>Permissions:</strong> Super Administrator</p>
@@ -1557,7 +1557,7 @@
 
 
 
-        <h6 class="clear-fix" id="updateboard">Boards - Update <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updateboard">Boards - Update <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update an existing boards information.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -1674,7 +1674,7 @@
 
 
         <h5 class="clear-fix" id="breadcrumbs">Breadcrumbs</h5>
-        <h6 class="clear-fix" id="findbreadcrumbs">Breadcrumbs - Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="findbreadcrumbs">Breadcrumbs - Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to get the breadcrumbs from board, thread, category or post id</p>
 
         <pre class="code-block padded-alt twelve columns">/api/breadcrumbs</pre>
@@ -1765,7 +1765,7 @@
 
 
         <h5 class="clear-fix" id="categories">Categories</h5>
-        <h6 class="clear-fix" id="allcategories">Categories - All Categories <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="allcategories">Categories - All Categories <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to retrieve all boards within their respective categories.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/boards</pre>
@@ -1810,7 +1810,7 @@
 
 
 
-        <h6 class="clear-fix" id="updatecategories">Categories - Update Categories <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updatecategories">Categories - Update Categories <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update boards within their categories.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -1911,7 +1911,7 @@
 
 
         <h5 class="clear-fix" id="posts">Posts</h5>
-        <h6 class="clear-fix" id="createpost">Posts - Create <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="createpost">Posts - Create <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to create a new post.</p>
 
         <p><strong>Permissions:</strong> User</p>
@@ -2042,7 +2042,7 @@
 
 
 
-        <h6 class="clear-fix" id="deletepost">Posts - Delete <pre class="code-block delete">DELETE</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="deletepost">Posts - Delete <pre class="code-block delete">DELETE</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to delete a post.</p>
 
         <p><strong>Permissions:</strong> User (Post&#39;s Author) or Admin</p>
@@ -2169,7 +2169,7 @@
 
 
 
-        <h6 class="clear-fix" id="findpost">Posts - Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="findpost">Posts - Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to find a post.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/posts/:id</pre>
@@ -2280,7 +2280,7 @@
 
 
 
-        <h6 class="clear-fix" id="importpost">Posts - Import <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="importpost">Posts - Import <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to import a post. Currently only SMF is supported.</p>
 
         <p><strong>Permissions:</strong> Super Administrator</p>
@@ -2441,7 +2441,7 @@
 
 
 
-        <h6 class="clear-fix" id="pagepostsbythread">Posts - Page By Thread <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pagepostsbythread">Posts - Page By Thread <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to page through posts by thread.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/posts</pre>
@@ -2516,7 +2516,7 @@
 
 
 
-        <h6 class="clear-fix" id="pagepostsbyuser">Posts - Page By User <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pagepostsbyuser">Posts - Page By User <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to page through posts made by a particular user</p>
 
         <pre class="code-block padded-alt twelve columns">/api/posts/user/:username</pre>
@@ -2613,7 +2613,7 @@
 
 
 
-        <h6 class="clear-fix" id="pagepostsbyusercount">Posts - Page By User Count <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pagepostsbyusercount">Posts - Page By User Count <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Retrieves the number of posts created by a particular user.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/posts/user/:username/count</pre>
@@ -2676,7 +2676,7 @@
 
 
 
-        <h6 class="clear-fix" id="purgepost">Posts - Purge <pre class="code-block delete">DELETE</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="purgepost">Posts - Purge <pre class="code-block delete">DELETE</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to purge a post.</p>
 
         <p><strong>Permissions:</strong> Admin</p>
@@ -2789,7 +2789,7 @@
 
 
 
-        <h6 class="clear-fix" id="undeletepost">Posts - Undelete <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="undeletepost">Posts - Undelete <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to undo a deleted post.</p>
 
         <p><strong>Permissions:</strong> User (Post&#39;s Author) or Admin</p>
@@ -2916,7 +2916,7 @@
 
 
 
-        <h6 class="clear-fix" id="updatepost">Posts - Update <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updatepost">Posts - Update <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update a post.</p>
 
         <p><strong>Permissions:</strong> User (Post&#39;s Author) or Admin</p>
@@ -3063,7 +3063,7 @@
 
 
         <h5 class="clear-fix" id="reports">Reports</h5>
-        <h6 class="clear-fix" id="countpostreportnotes">Reports - (Admin) Count Post Report Notes <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="countpostreportnotes">Reports - (Admin) Count Post Report Notes <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to count how many post moderation report notes there are for a particular report. This is used to determine how many pages to show for paginating through report notes.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -3128,7 +3128,7 @@
 
 
 
-        <h6 class="clear-fix" id="countpostreports">Reports - (Admin) Count Post Reports <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="countpostreports">Reports - (Admin) Count Post Reports <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to count how many post moderation reports there are. This is used to determine how many pages to show for paginating through reports.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -3199,7 +3199,7 @@
 
 
 
-        <h6 class="clear-fix" id="countuserreportnotes">Reports - (Admin) Count User Report Notes <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="countuserreportnotes">Reports - (Admin) Count User Report Notes <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to count how many user moderation report notes there are for a particular report. This is used to determine how many pages to show for paginating through report notes.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -3264,7 +3264,7 @@
 
 
 
-        <h6 class="clear-fix" id="countuserreports">Reports - (Admin) Count User Reports <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="countuserreports">Reports - (Admin) Count User Reports <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to count how many user moderation reports there are. This is used to determine how many pages to show for paginating through reports.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -3335,7 +3335,7 @@
 
 
 
-        <h6 class="clear-fix" id="createpostreport">Reports - Create Post Report <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="createpostreport">Reports - Create Post Report <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to report a post for moderators/administrators to review.</p>
 
         <p><strong>Permissions:</strong> Users</p>
@@ -3454,7 +3454,7 @@
 
 
 
-        <h6 class="clear-fix" id="createpostreportnote">Reports - (Admin) Create Post Report Note <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="createpostreportnote">Reports - (Admin) Create Post Report Note <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to leave a note on post moderation reports.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -3573,7 +3573,7 @@
 
 
 
-        <h6 class="clear-fix" id="createuserreport">Reports - Create User Report <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="createuserreport">Reports - Create User Report <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to report a user for moderators/administrators to review.</p>
 
         <p><strong>Permissions:</strong> Users</p>
@@ -3692,7 +3692,7 @@
 
 
 
-        <h6 class="clear-fix" id="createuserreportnote">Reports - (Admin) Create User Report Note <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="createuserreportnote">Reports - (Admin) Create User Report Note <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to leave a note on user moderation reports.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -3811,7 +3811,7 @@
 
 
 
-        <h6 class="clear-fix" id="pagepostreport">Reports - (Admin) Page Post Report <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pagepostreport">Reports - (Admin) Page Post Report <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to page through post moderation reports.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -4008,7 +4008,7 @@
 
 
 
-        <h6 class="clear-fix" id="pagepostreportnotes">Reports - (Admin) Page Post Report Notes <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pagepostreportnotes">Reports - (Admin) Page Post Report Notes <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to page through post moderation report notes.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -4143,7 +4143,7 @@
 
 
 
-        <h6 class="clear-fix" id="pageuserreport">Reports - (Admin) Page User Report <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pageuserreport">Reports - (Admin) Page User Report <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to page through user moderation reports.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -4316,7 +4316,7 @@
 
 
 
-        <h6 class="clear-fix" id="pageuserreportnotes">Reports - (Admin) Page User Report Notes <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pageuserreportnotes">Reports - (Admin) Page User Report Notes <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to page through user moderation report notes.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -4451,7 +4451,7 @@
 
 
 
-        <h6 class="clear-fix" id="updatepostreport">Reports - (Admin) Update Post Report <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updatepostreport">Reports - (Admin) Update Post Report <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update the status of a post moderation report.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -4570,7 +4570,7 @@
 
 
 
-        <h6 class="clear-fix" id="updatepostreportnote">Reports - (Admin) Update Post Report Note <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updatepostreportnote">Reports - (Admin) Update Post Report Note <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update an existing note on post moderation reports.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -4683,7 +4683,7 @@
 
 
 
-        <h6 class="clear-fix" id="updateuserreport">Reports - (Admin) Update User Report <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updateuserreport">Reports - (Admin) Update User Report <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update the status of a user moderation report.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -4802,7 +4802,7 @@
 
 
 
-        <h6 class="clear-fix" id="updateuserreportnote">Reports - (Admin) Update User Report Note <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updateuserreportnote">Reports - (Admin) Update User Report Note <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update an existing note on user moderation reports.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -4915,7 +4915,7 @@
 
 
         <h5 class="clear-fix" id="settings">Settings</h5>
-        <h6 class="clear-fix" id="findsettings">Settings - (Admin) Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="findsettings">Settings - (Admin) Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to fetch all web app settings. Allows admins to grab settings defined in config.js</p>
 
         <pre class="code-block padded-alt twelve columns">/api/admin/settings</pre>
@@ -4944,7 +4944,7 @@
 
 
 
-        <h6 class="clear-fix" id="updatesettings">Settings - (Admin) Update <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updatesettings">Settings - (Admin) Update <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update web app settings. Used in the admin panel.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/admin/settings</pre>
@@ -5201,7 +5201,7 @@
 
 
 
-        <h6 class="clear-fix" id="websettings">Settings - Website Configurations <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="websettings">Settings - Website Configurations <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to fetch website settings such as the logo, favicon, website description/title and keywords</p>
 
         <pre class="code-block padded-alt twelve columns">/api/settings/web</pre>
@@ -5254,7 +5254,7 @@
 
 
         <h5 class="clear-fix" id="threads">Threads</h5>
-        <h6 class="clear-fix" id="createthread">Threads - Create <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="createthread">Threads - Create <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to create a new thread.</p>
 
         <p><strong>Permissions:</strong> User</p>
@@ -5385,7 +5385,7 @@
 
 
 
-        <h6 class="clear-fix" id="findthread">Threads - Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="findthread">Threads - Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to find an existing thread.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/threads/:id</pre>
@@ -5508,7 +5508,7 @@
 
 
 
-        <h6 class="clear-fix" id="importthread">Threads - Import <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="importthread">Threads - Import <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to import an existing thread. Currently only SMF is supported.</p>
 
         <p><strong>Permissions:</strong> Super Administrator</p>
@@ -5669,7 +5669,7 @@
 
 
 
-        <h6 class="clear-fix" id="lockthread">Threads - Lock <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="lockthread">Threads - Lock <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to lock a thread and prevent any additional posts.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator, User (Thread Author Only)</p>
@@ -5824,7 +5824,7 @@
 
 
 
-        <h6 class="clear-fix" id="movethread">Threads - Move <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="movethread">Threads - Move <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to move a thread to a different board.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -5984,7 +5984,7 @@
 
 
 
-        <h6 class="clear-fix" id="pagethreadsbyboard">Threads - Page By Board <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pagethreadsbyboard">Threads - Page By Board <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to page through a board&#39;s threads.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/threads</pre>
@@ -6059,7 +6059,7 @@
 
 
 
-        <h6 class="clear-fix" id="stickythread">Threads - Sticky <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="stickythread">Threads - Sticky <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to sticky a thread. This will cause the thread to show up at the top of the board it&#39;s posted within.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -6214,7 +6214,7 @@
 
 
         <h5 class="clear-fix" id="users">Users</h5>
-        <h6 class="clear-fix" id="adduserroleadmin">Users - (Admin) Add Roles <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="adduserroleadmin">Users - (Admin) Add Roles <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to add a role or roles to a user. This allows Administrators to add new (Super) Administrators and (Global) Moderators.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -6351,7 +6351,7 @@
 
 
 
-        <h6 class="clear-fix" id="banusersadmin">Users - (Admin) Ban <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="banusersadmin">Users - (Admin) Ban <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>This allows Administrators and Moderators to ban users.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -6446,7 +6446,7 @@
 
 
 
-        <h6 class="clear-fix" id="countadminusersadmin">Users - (Admin) Count Administrators <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="countadminusersadmin">Users - (Admin) Count Administrators <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>This allows Administrators to get a count of how many admin users are registered. This is used in the admin panel for paginating through admin users.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -6493,7 +6493,7 @@
 
 
 
-        <h6 class="clear-fix" id="countmodusersadmin">Users - (Admin) Count Moderators <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="countmodusersadmin">Users - (Admin) Count Moderators <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>This allows Administrators to get a count of how many mod users are registered. This is used in the admin panel for paginating through mod users.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -6540,7 +6540,7 @@
 
 
 
-        <h6 class="clear-fix" id="countusersadmin">Users - (Admin) Count Users <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="countusersadmin">Users - (Admin) Count Users <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>This allows Administrators to get a count of how many users are registered. This is used in the admin panel for paginating through users.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -6611,7 +6611,7 @@
 
 
 
-        <h6 class="clear-fix" id="finduser">Users - Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="finduser">Users - Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Find a user by their username.</p>
 
         <pre class="code-block padded-alt twelve columns">/api/users/:username</pre>
@@ -6808,7 +6808,7 @@
 
 
 
-        <h6 class="clear-fix" id="finduseradmin">Users - (Admin) Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="finduseradmin">Users - (Admin) Find <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Find a user by their username. (Includes user&#39;s email)</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -7013,7 +7013,7 @@
 
 
 
-        <h6 class="clear-fix" id="importuser">Users - Import <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="importuser">Users - Import <pre class="code-block post">POST</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Import a user from an existing forum. Currently only SMF is supported</p>
 
         <p><strong>Permissions:</strong> Super Administrator</p>
@@ -7264,7 +7264,7 @@
 
 
 
-        <h6 class="clear-fix" id="pageadminusersadmin">Users - (Admin) Page Admins <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pageadminusersadmin">Users - (Admin) Page Admins <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>This allows Administrators to page through all registered admins.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -7383,7 +7383,7 @@
 
 
 
-        <h6 class="clear-fix" id="pagemodusersadmin">Users - (Admin) Page Mods <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pagemodusersadmin">Users - (Admin) Page Mods <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>This allows Administrators to page through all registered mods.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -7502,7 +7502,7 @@
 
 
 
-        <h6 class="clear-fix" id="pageusersadmin">Users - (Admin) Page Users <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="pageusersadmin">Users - (Admin) Page Users <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>This allows Administrators to page through all registered users.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -7633,7 +7633,7 @@
 
 
 
-        <h6 class="clear-fix" id="removeuserroleadmin">Users - (Admin) Remove Roles <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="removeuserroleadmin">Users - (Admin) Remove Roles <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to remove a role or roles to a user. This allows Administrators to remove roles from an account.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -7770,7 +7770,7 @@
 
 
 
-        <h6 class="clear-fix" id="searchusernamesadmin">Users - (Admin) Search Usernames <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="searchusernamesadmin">Users - (Admin) Search Usernames <pre class="code-block get">GET</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>This allows Administrators to search usernames. This is used in the admin panel to autocomplete usernames when trying to quickly find a user.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator</p>
@@ -7847,7 +7847,7 @@
 
 
 
-        <h6 class="clear-fix" id="unbanusersadmin">Users - (Admin) Unban <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="unbanusersadmin">Users - (Admin) Unban <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>This allows Administrators and Moderators to unban users. Ban expiration is set to current timestamp, expiring it immediately</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>
@@ -7936,7 +7936,7 @@
 
 
 
-        <h6 class="clear-fix" id="updateuser">Users - Update <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updateuser">Users - Update <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update user information such as profile fields, or passwords.</p>
 
         <p><strong>Permissions:</strong> User (Users may update their own account)</p>
@@ -8189,7 +8189,7 @@
 
 
 
-        <h6 class="clear-fix" id="updateuseradmin">Users - (Admin) Update <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h6>
+        <h6 class="clear-fix" id="updateuseradmin">Users - (Admin) Update <pre class="code-block put">PUT</pre><a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h6>
         <p>Used to update user information such as profile fields, or passwords. Allows admins and mods to update user&#39;s account if neccessary.</p>
 
         <p><strong>Permissions:</strong> Super Administrator, Administrator, Global Moderator, Moderator</p>

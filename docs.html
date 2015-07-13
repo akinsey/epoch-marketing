@@ -77,7 +77,7 @@
         <div class="nine columns docs-content">
 
           <div id="about">
-            <h5>About<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <h5>About<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
             <p>
               <strong>Warning this project is under active development, design is subject to change</strong>
             </p>
@@ -87,7 +87,7 @@
           </div>
 
           <div id="features">
-            <h5>Features<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <h5>Features<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
             <ul>
               <li>Epochtalk is a single page web application created with <a href="https://angularjs.org">AngularJS</a></li>
               <li>Web/Mobile ready responsive design using <a href="http://foundation.zurb.com">Foundation</a></li>
@@ -97,7 +97,7 @@
           </div>
 
           <div id="dependencies">
-            <h5>Dependencies<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <h5>Dependencies<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
 
             <div id="system">
               <h6>System</h6>
@@ -184,7 +184,7 @@
           </div>
 
           <div id="installation">
-            <h5>Installation<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <h5>Installation<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
             <strong>1) Checkout repository using git:</strong><br />
             <pre class="code-block padded twelve columns">$ git clone git@github.com:epochtalk/epochtalk.git</pre><br />
 
@@ -212,7 +212,7 @@ $ foreman start -f #for production</pre><br />
           </div>
 
           <div id="configuration">
-            <h5>Configuration<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <h5>Configuration<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
             <p>Forum configurations can be set either manually or using the admin panel.</p>
 
             <div id="manual">
@@ -259,7 +259,7 @@ IMAGES_S3_SECRET_KEY=testkey</pre>
           </div>
 
           <div id="editor">
-            <h5>Editor<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <h5>Editor<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
             <p>Each post is crafted through a unique editor with a live content preview.</p>
             <img class="docs-image" src="images/editor.png" /><br /><br />
 
@@ -294,7 +294,7 @@ IMAGES_S3_SECRET_KEY=testkey</pre>
           </div>
 
           <div id="planned-changes">
-            <h5>Planned Changes<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <h5>Planned Changes<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
             <ul>
               <li>Redesign of frontend user interface (Current UI is temporary). Design is currently a low priority until the all the forum features are fully fleshed out.</li>
               <li>Dockerizing Epochtalk</li>
@@ -303,14 +303,14 @@ IMAGES_S3_SECRET_KEY=testkey</pre>
           </div>
 
           <div id="feedback">
-            <h5>Feedback<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <h5>Feedback<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
             <p>
               Please leave us feedback using <a href="https://github.com/epochtalk/epochtalk/issues">github issues</a>.
             </p>
           </div>
 
           <div id="license">
-            <h5>License<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <h5>License<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
             <p>The MIT License (MIT)</p>
 
             <p>Copyright (c) 2015 Epochtalk</p>
@@ -343,7 +343,8 @@ IMAGES_S3_SECRET_KEY=testkey</pre>
   <script>
     $(document).ready(function() {
       var stickyNav = function() {
-        var pos = $('body').scrollTop(), breakpoint = 125, newNavPos;
+        var pos = $(window).scrollTop(), breakpoint = 125, newNavPos;
+        console.log(pos);
         if (pos >= breakpoint) { newNavPos = 5; }
         else { newNavPos = breakpoint -1; }
         $('.docs-nav').css('top', newNavPos);

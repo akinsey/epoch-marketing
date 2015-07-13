@@ -1,20 +1,6 @@
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button.button-primary, .button.button-primary:active, .button.button-primary:visited, .button.button-primary:focus {
-  background-color: #18959F;
-  border-color: #18959F;
-}
-.button.button-primary:hover {
-  background-color: #19A3AF;
-  border-color: #19A3AF;
-}
-
-a, a:active, a:visited, a:focus { text-decoration: none; color: #18959F; }
-a:hover { color: #19A3AF; }
-
 body { font-family: 'Open Sans', sans-serif; }
-
-.clear-fix { clear: both; }
 th,
 td {
   padding: .8rem;
@@ -25,20 +11,23 @@ th:first-child,
 td:first-child { padding: .8rem; }
 th:last-child,
 td:last-child { padding: .8rem; }
-.docs-nav ul ul {
-  font-weight: normal;
-  margin: 1.5rem 0 1.5rem 1.2rem;
-  font-size: 90%;
+.button.button-primary, .button.button-primary:active, .button.button-primary:visited, .button.button-primary:focus {
+  background-color: #18959F;
+  border-color: #18959F;
 }
-.docs-nav ul {
-  font-weight: bold;
-  font-size: 1.2rem;
+.button.button-primary:hover {
+  background-color: #19A3AF;
+  border-color: #19A3AF;
 }
+a, a:active, a:visited, a:focus { text-decoration: none; color: #18959F; }
+a:hover { color: #19A3AF; }
+.clear-fix { clear: both; }
 .back-to-top {
   float: right;
   font-size: 1.2rem;
   line-height: 3rem;
 }
+.back-to-top span { font-family: 'Open Sans', sans-serif; }
 .code-block {
   display: inline-block;
   background-color: #DDD;
@@ -63,8 +52,6 @@ td:last-child { padding: .8rem; }
 .code-block.get { color: #fff; background-color: green; }
 .code-block.post { color: #fff; background-color: blue;}
 .code-block.put { color: #fff; background-color: gold;}
-/* Navigation
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .nav-wrap {
   padding: 4rem 0 0;
   margin: 0 0 -4rem 0;
@@ -92,9 +79,6 @@ td:last-child { padding: .8rem; }
   text-align: center;
 }
 .logo-sub { font-family: 'Open Sans', sans-serif; }
-
-/* Sections
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
   padding: 10rem 0;
   text-align: center;
@@ -107,8 +91,6 @@ td:last-child { padding: .8rem; }
 
 /* –––––––––––––––––– Home Page –––––––––––––––––––*/
 
-/* Main Cover
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .tagline-wrap {
   text-align: center;
   position: relative;
@@ -124,9 +106,6 @@ td:last-child { padding: .8rem; }
   max-width: 100%;
   margin: 4rem auto -12rem;
 }
-
-/* Epoch Section
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .epoch-section {
   background-image: url('../images/bg-mobile.jpg');
   background-size: cover;
@@ -143,9 +122,6 @@ td:last-child { padding: .8rem; }
   font-weight: 300;
 }
 .epoch-description a { color: #fff; }
-
-/* Categories
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories {
   background-image: url('../images/bg-mobile.jpg');
   background-size: cover;
@@ -165,6 +141,15 @@ td:last-child { padding: .8rem; }
 .docs h6 { border: 0; font-size: 1.8rem;}
 .docs-nav { display: none; }
 .docs-nav.fixed { position: fixed; }
+.docs-nav ul ul {
+  font-weight: normal;
+  margin: 1.5rem 0 1.5rem 1.2rem;
+  font-size: 90%;
+}
+.docs-nav ul {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 .docs-content {
   float:right;
   background-color: #fafafa;
@@ -177,8 +162,6 @@ td:last-child { padding: .8rem; }
 }
 .spacing-fix { margin-top: -1.5rem; }
 .docs-image { max-width: 100%; }
-
-/* ------------------ API PAGE ------------------------*/
 
 
 /* –––––––––––––––––– Media Queries –––––––––––––––––––*/
