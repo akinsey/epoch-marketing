@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Epochtalk Forum Software</title>
+  <title>Epochtalk - Documentation</title>
   <meta name="description" content="Next generation forum software.">
   <meta name="author" content="Slickage Studios">
 
@@ -340,19 +340,7 @@ IMAGES_S3_SECRET_KEY=testkey</pre>
 
   <!-- Scripts -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      var stickyNav = function() {
-        var pos = $(window).scrollTop(), breakpoint = 125, newNavPos;
-        console.log(pos);
-        if (pos >= breakpoint) { newNavPos = 5; }
-        else { newNavPos = breakpoint -1; }
-        $('.docs-nav').css('top', newNavPos);
-      };
-      $(window).on('scroll', stickyNav);
-      $(window).on('resize', stickyNav);
-    });
-  </script>
+  <script src="js/stickynav.js"></script>
 
 </body>
 </html>
