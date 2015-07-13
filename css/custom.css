@@ -89,7 +89,13 @@ a:hover { color: #19A3AF; }
 .section-description {
   margin-bottom: 1.2rem;
 }
-
+footer {
+  text-align:center;
+  letter-spacing: .2rem;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: -3.5rem;
+}
 
 /* –––––––––––––––––– Home Page –––––––––––––––––––*/
 
@@ -124,14 +130,26 @@ a:hover { color: #19A3AF; }
   font-weight: 300;
 }
 .epoch-description a { color: #fff; }
-.categories {
-  background-image: url('../images/bg-mobile.jpg');
-  background-size: cover;
-  color: #fff;
+.category {
+  margin-top: 4rem;
 }
-.categories .section-description { margin-bottom: 4rem; }
-
-
+.categories {
+  padding-top: 0;
+  margin-top: -4rem;
+}
+.categories.section-description { margin-bottom: 4rem; }
+.owl-carousel .owl-wrapper-outer { border: 1px solid #ccc; }
+.owl-carousel .owl-wrapper { margin-bottom: -.8rem; }
+.owl-theme .owl-controls .owl-buttons div {
+  background-color: #18959F;
+  border-color: #18959F;
+  border-radius: .4rem;
+  opacity: 1;
+}
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  background-color: #19A3AF;
+  border-color: #19A3AF;
+}
 /* –––––––––––––––––– Docs Page –––––––––––––––––––*/
 
 .docs { text-align: left; }
@@ -172,7 +190,6 @@ a:hover { color: #19A3AF; }
 @media (min-width: 550px) {
   .logo { text-align: left; }
   .epoch-section { background-image: url('../images/bg.jpg'); }
-  .categories { background-image: url('../images/bg.jpg'); }
   .nav-wrap { text-align: right; }
   .tagline-wrap { text-align: left; }
   .logo-text { font-size: 3.5rem; }
