@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Epochtalk Forum Software</title>
+  <meta name="description" content="Next generation forum software.">
+  <meta name="author" content="Slickage Studios">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="nav-wrap" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="one columns logo"><i class="fa fa-list-ul"><span class="logo-sub">pochtalk</span></i></div>
+        <div class="eleven columns">
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="docs.html" class="active">Documentation</a></li>
+            <li><a href="api.html">API</a></li>
+            <li><a href="map.html">Roadmap</a></li>
+            <li><a href="contrib.html">Contribute</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Page Layout -->
+
+  <div class="section docs">
+    <div class="container">
+      <div class="row">
+        <div class="three columns docs-nav fixed">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#dependencies">Dependencies</a>
+              <ul>
+                <li><a href="#system">System</a></li>
+                <li><a href="#bower">Bower</a></li>
+                <li><a href="#npm">NPM</a></li>
+              </ul>
+            </li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#configuration">Configuration</a>
+              <ul>
+                <li><a href="#manual">Manual</a></li>
+                <li><a href="#admin-panel">Admin Panel</a></li>
+              </ul>
+            </li>
+            <li><a href="#editor">Editor</a>
+              <ul>
+                <li><a href="#bbcode">BBCode</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#planned-features">Planned Features</a></li>
+              </ul>
+            </li>
+            <li><a href="#planned-changes">Planned Changes</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#license">License</a></li>
+          </ul>
+        </div>
+        <div class="nine columns docs-content">
+
+          <div id="about">
+            <h5>About<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <p>
+              <strong>Warning this project is under active development, design is subject to change</strong>
+            </p>
+            <p>
+              Next generation forum software. Epochtalk is a forum frontend designed to be paired with the <a href="https://github.com/epochtalk/core-pg">core-pg</a> backend. Epochtalk forum software utilizes technologies such as <a href="https://angularjs.org">AngularJS</a>, <a href="https://www.npmjs.org/package/browserify">Browserify</a>, <a href="https://github.com/postgres/postgres">Postgres</a> and <a href="http://foundation.zurb.com">Foundation</a> for improved performance and user experience as compared to existing forum software.
+            </p>
+          </div>
+
+          <div id="features">
+            <h5>Features<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <ul>
+              <li>Epochtalk is a single page web application created with <a href="https://angularjs.org">AngularJS</a></li>
+              <li>Web/Mobile ready responsive design using <a href="http://foundation.zurb.com">Foundation</a></li>
+              <li>JavaScript and CSS is bundled and minimized for performance using <a href="https://www.npmjs.org/package/browserify">Browserify</a> and <a href="https://www.npmjs.org/package/uglify-js">Uglify-js</a></li>
+              <li>Designed with performance in mind. Epochtalk's backend, <a href="https://github.com/epochtalk/core-pg">core-pg</a>, utilizes <a href="http://www.postgresql.org/">Postgres</a> as a database.</li>
+            </ul>
+          </div>
+
+          <div id="dependencies">
+            <h5>Dependencies<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+
+            <div id="system">
+              <h6>System</h6>
+              <ul>
+                <li><a href="http://nodejs.org">node</a></li>
+                <li><a href="https://www.npmjs.org/doc/README.html">npm</a> (pre-packaged with node)</li>
+                <li><a href="https://github.com/bower/bower">bower</a></li>
+                <li><a href="http://www.postgresql.org">PostgreSQL</a></li>
+                <li><a href="http://ddollar.github.io/foreman">foreman</a></li>
+              </ul>
+            </div>
+
+            <div id="bower">
+              <h6>Bower</h6>
+              <ul>
+                <li>angular <pre class="code-block">1.3.14</pre></li>
+                <li>angular-sanitize <pre class="code-block">1.3.14</pre></li>
+                <li>angular-resource <pre class="code-block">1.3.14</pre></li>
+                <li>angular-animate <pre class="code-block">1.3.14</pre></li>
+                <li>angular-loading-bar <pre class="code-block">0.7.1</pre></li>
+                <li>foundation <pre class="code-block">5.5.1</pre></li>
+                <li><a href="http://github.com/slickage/Nestable">nestable</a></li>
+                <li>angular-ui-router <pre class="code-block">~0.2.15</pre></li>
+                <li>angular-ui-router-title <pre class="code-block">0.0.3</pre></li>
+              </ul>
+            </div>
+
+            <div id="npm">
+              <h6>NPM</h6>
+              <div class="row">
+                <div class="one-third column">
+                  <ul>
+                    <li>async <pre class="code-block">^0.9.0</pre></li>
+                    <li>aws-sdk <pre class="code-block">^2.1.20</pre></li>
+                    <li>bcrypt <pre class="code-block">^0.8.0</pre></li>
+                    <li>bluebird <pre class="code-block">^2.6.4</pre></li>
+                    <li>boom <pre class="code-block">^2.6.1</pre></li>
+                    <li>brfs <pre class="code-block">^1.3.0</pre></li>
+                    <li>browserify <pre class="code-block">^8.1.3</pre></li>
+                    <li>cheerio <pre class="code-block">^0.18.0</pre></li>
+                    <li>commander <pre class="code-block">^2.5.1</pre></li>
+                    <li>db-migrate <pre class="code-block">^0.8.0</pre></li>
+                    <li>deep-rename-keys <pre class="code-block">^0.1.0</pre></li>
+                    <li>dot <pre class="code-block">^1.0.3</pre></li>
+                    <li>epochtalk-bbcode-parser <pre class="code-block">^1.0.0</pre></li>
+                    <li>epochtalk-core-pg <pre class="code-block">^0.9.11</pre></li>
+                    <li>fs-extra <pre class="code-block">^0.16.5</pre></li>
+                  </ul>
+                </div>
+                <div class="one-third column spacing-fix">
+                  <ul>
+                    <li>good <pre class="code-block">^5.1.1</pre></li>
+                    <li>good-console <pre class="code-block">^4.1.0</pre></li>
+                    <li>good-file <pre class="code-block">^4.0.1</pre></li>
+                    <li>hapi <pre class="code-block">^8.2.0</pre></li>
+                    <li>hoek <pre class="code-block">^2.12.0</pre></li>
+                    <li>joi <pre class="code-block">^6.0.8</pre></li>
+                    <li>json <pre class="code-block">^9.0.3</pre></li>
+                    <li>jsonwebtoken <pre class="code-block">^5.0.0</pre></li>
+                    <li>levelup <pre class="code-block">^0.19.0</pre></li>
+                    <li>lodash <pre class="code-block">^2.4.1</pre></li>
+                    <li>lout <pre class="code-block">^6.1.0</pre></li>
+                    <li>medium-editor <pre class="code-block">^1.8.14</pre></li>
+                    <li>memdown <pre class="code-block">^0.11.0</pre></li>
+                    <li>mkdirp <pre class="code-block">^0.5.0</pre></li>
+                    <li>mmmagic <pre class="code-block">^0.3.11</pre></li>
+                  </ul>
+                </div>
+                <div class="one-third column spacing-fix">
+                  <ul>
+                    <li>node-sass <pre class="code-block">^2.1.1</pre></li>
+                    <li>node-uuid <pre class="code-block">^1.4.1</pre></li>
+                    <li>nodemailer <pre class="code-block">^1.3.2</pre></li>
+                    <li>pg <pre class="code-block">^4.2.0</pre></li>
+                    <li>request <pre class="code-block">^2.53.0</pre></li>
+                    <li>sanitize-html <pre class="code-block">^1.4.3</pre></li>
+                    <li>stream-meter <pre class="code-block">^1.0.3</pre></li>
+                    <li>through2 <pre class="code-block">^0.6.3</pre></li>
+                    <li>yargs <pre class="code-block">^1.2.1</pre></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="installation">
+            <h5>Installation<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <strong>1) Checkout repository using git:</strong><br />
+            <pre class="code-block padded twelve columns">$ git clone git@github.com:epochtalk/epochtalk.git</pre><br />
+
+            <strong>2) Change directories and install dependencies using <a href="https://www.npmjs.org/doc/README.html">npm</a></strong><br />
+            <pre class="code-block padded twelve columns">$ cd epochtalk
+$ npm install</pre><br />
+
+            <strong>3) Install frontend dependencies using <a href="https://github.com/bower/bower">bower</a></strong><br />
+            <pre class="code-block padded twelve columns">$ bower install</pre><br />
+
+            <strong>4) Run the Epochtalk CLI tool</strong><br />
+            First ensure that <a href="http://www.postgresql.org/">PostgreSQL</a> is installed and running. Before running Epochtalk for the first time, it is necessary to setup the database and first user account. The CLI tool will create the first board and admin account for the fourm. From the root directory of the project run the following command:
+            <pre class="code-block padded twelve columns">$ node cli/index.js --create</pre><br />
+
+            <strong>5) Start the Epochtalk server</strong><br />
+            Ensure that <a href="http://ddollar.github.io/foreman">foreman</a> is installed. Upon running the <pre class="code-block">foreman start</pre> command Epochtalk will start its webserver and compile all JavaScript and css. Once compilation is complete the forum can be viewed at <pre class="code-block">http://localhost:8080</pre>
+            <pre class="code-block padded twelve columns">$ foreman start -f Procfile.dev #for development
+$ foreman start -f #for production</pre><br />
+
+            <strong>6) Login and change admin account information</strong><br />
+            Login to the admin account using the username <pre class="code-block">admin</pre> and password <pre class="code-block">admin1234</pre>. Visit your profile by clicking the link in the top right corner of the page, then change your username and password.<br /><br /><br />
+
+            <strong>Trouble Shooting</strong><br />
+            Since both <a href="https://github.com/epochtalk/epochtalk">Epochtalk</a> and <a href="https://github.com/epochtalk/core-pg">core-pg</a> are actively being developed, the database migrations can become out of sync. To resolve this you can checkout <a href="https://github.com/epochtalk/core-pg">core-pg</a> and then from within the root directory of core-pg, you can run <pre class="code-block">npm link</pre>. Change directories into the <pre class="code-block">node_modules</pre> of your checked out <a href="https://github.com/epochtalk/epochtalk">Epochtalk</a> project and run <pre class="code-block">npm link epochtalk-core-pg</pre>. This will ensure that <a href="https://github.com/epochtalk/epochtalk">Epochtalk</a> is using the latest master of <a href="https://github.com/epochtalk/core-pg">core-pg</a> instead of the npm version. Then run <pre class="code-block">npm run db-migrate</pre> from the root directory of your <a href="https://github.com/epochtalk/epochtalk">Epochtalk</a> project to ensure all migrations are up to date.<br /><br />
+          </div>
+
+          <div id="configuration">
+            <h5>Configuration<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <p>Forum configurations can be set either manually or using the admin panel.</p>
+
+            <div id="manual">
+              <h6>Manual</h6>
+              <p>
+                The forum configs can be set manually with a <a href="http://ddollar.github.io/foreman/#ENVIRONMENT">.env</a> file in the root directory of the project.
+              </p>
+              <pre class="code-block padded twelve columns">HOST=localhost
+PORT=8080
+LOG_ENABLED=true
+PUBLIC_URL=http://localhost:8080
+PRIVATE_KEY=Change this to something more secure
+VERIFY_REGISTRATION=false
+LOGIN_REQUIRED=false
+WEBSITE_TITLE=Epochtalk Forums
+WEBSITE_DESCRIPTION=Open source forum software
+WEBSITE_KEYWORDS=open source, free forum, forum software, forum
+WEBSITE_LOGO=
+WEBSITE_FAVICON=
+EMAILER_SENDER=info@example.com
+EMAILER_HOST=smtp.gmail.com
+EMAILER_PORT=465
+EMAILER_USER=username
+EMAILER_PASS=password
+EMAILER_SECURE=true
+IMAGES_STORAGE=local
+IMAGES_MAX_SIZE=10485760
+IMAGES_EXPIRATION=7200000
+IMAGES_INTERVAL=900000
+IMAGES_LOCAL_DIR=/public/images
+IMAGES_LOCAL_PATH=/static/images
+IMAGES_S3_ROOT=http://some.where
+IMAGES_S3_DIR=images/
+IMAGES_S3_BUCKET=bukkit
+IMAGES_S3_REGION=region
+IMAGES_S3_ACCESS_KEY=testkey
+IMAGES_S3_SECRET_KEY=testkey</pre>
+            </div>
+            <div class="clear-fix" id="admin-panel">
+              <h6>Admin Panel</h6>
+              <p>Configurations can also be set using the settings tab in the administration panel.</p>
+              <img class="docs-image" src="images/admin-panel.png" /><br /><br />
+            </div>
+          </div>
+
+          <div id="editor">
+            <h5>Editor<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <p>Each post is crafted through a unique editor with a live content preview.</p>
+            <img class="docs-image" src="images/editor.png" /><br /><br />
+
+            <div id="bbcode">
+              <h6>BBCode</h6>
+              <p>
+                As for BBCode, the tags that are parsed are based off the SMF 1.0 BBCode spec but with some modifications as per the BitcoinTalk forum. Due to the fact that BBCode differs from forum to forum, a preview window is provided to the right of the main user input to preview what the post will look like once it has been sent to the server. The editor itself will parse the user input in real time with a 250 millisecond debounce. So user can continue to type and the text will not be parsed until 250 millisecond after the last keypress.
+              </p>
+                To view the list of supported BBCode tags click the <pre class="code-block">formatting</pre> button at the top right of the editor:<br /><br />
+              <img class="docs-image" src="images/bbcode.png" /><br /><br />
+            </div>
+
+            <div id="security">
+              <h6>Security</h6>
+              <p>All user typed HTML is escaped using their decimal encoding while any other HTML is cleaned using <a href="https://github.com/punkave">punkave's</a> <a href="https://github.com/punkave/sanitize-html">sanitize-html</a> library. All BBCode input is parsed through our modified <a href="https://github.com/epochtalk/bbcode-parser">BBCode-Parser</a> library. This ensures that all content passed to the server is sanitized from any malicious code. Also, Angular's sanitization library also ensures that anything missed through the above process is yet again cleaned before it is shown on the client's browser.</p>
+
+              <p><strong>All inputs on the forum are cleaned to different degrees.</strong></p>
+
+              Title like inputs are stripped of all html while description like inputs are allowed only formatting based html tags (<pre class="code-block">&lt;b&gt;</pre>, <pre class="code-block">&lt;em&gt;</pre>, <pre class="code-block">&lt;table&gt;</pre> but not <pre class="code-block">&lt;div&gt;</pre>, <pre class="code-block">&lt;img&gt;</pre>, and <pre class="code-block">&lt;span&gt;</pre>). Posts and Signatures are given the full treatment as described above but allow more html like <pre class="code-block">&lt;img&gt;</pre>.<br /><br />
+            </div>
+
+            <div id="planned-features">
+              <h6>Planned Features</h6>
+              <ul>
+                <li>Markdown Support</li>
+                <li>Medium Based Editor</li>
+                <li>Hiding the preview window</li>
+                <li>Moving the preview window to another location</li>
+                <li>Full feature compatibility across all input methods (BBCode, Medium, Markdown)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="planned-changes">
+            <h5>Planned Changes<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <ul>
+              <li>Redesign of frontend user interface (Current UI is temporary). Design is currently a low priority until the all the forum features are fully fleshed out.</li>
+              <li>Dockerizing Epochtalk</li>
+            </ul>
+            <p>To see planned backend changes, visit the core-pg <a href="https://github.com/epochtalk/core-pg/issues">issues page</a>.</p>
+          </div>
+
+          <div id="feedback">
+            <h5>Feedback<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <p>
+              Please leave us feedback using <a href="https://github.com/epochtalk/epochtalk/issues">github issues</a>.
+            </p>
+          </div>
+
+          <div id="license">
+            <h5>License<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> Back to Top</i></a></h5>
+            <p>The MIT License (MIT)</p>
+
+            <p>Copyright (c) 2015 Epochtalk</p>
+
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+            of this software and associated documentation files (the "Software"), to deal
+            in the Software without restriction, including without limitation the rights
+            to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+            copies of the Software, and to permit persons to whom the Software is
+            furnished to do so, subject to the following conditions:</p>
+
+            <p>The above copyright notice and this permission notice shall be included in
+            all copies or substantial portions of the Software.</p>
+
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+            THE SOFTWARE.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var stickyNav = function() {
+        var pos = $('body').scrollTop(), breakpoint = 125, newNavPos;
+        if (pos >= breakpoint) { newNavPos = 5; }
+        else { newNavPos = breakpoint -1; }
+        $('.docs-nav').css('top', newNavPos);
+      };
+      $(window).on('scroll', stickyNav);
+      $(window).on('resize', stickyNav);
+    });
+  </script>
+
+</body>
+</html>

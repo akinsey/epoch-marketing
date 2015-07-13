@@ -1,0 +1,212 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button.button-primary, .button.button-primary:active, .button.button-primary:visited, .button.button-primary:focus {
+  background-color: #18959F;
+  border-color: #18959F;
+}
+.button.button-primary:hover {
+  background-color: #19A3AF;
+  border-color: #19A3AF;
+}
+
+a, a:active, a:visited, a:focus { text-decoration: none; color: #18959F; }
+a:hover { color: #19A3AF; }
+
+body { font-family: 'Open Sans', sans-serif; }
+
+.clear-fix { clear: both; }
+th,
+td {
+  padding: .8rem;
+  text-align: left;
+  border: 1px solid #E1E1E1; }
+th { background-color: #eee;}
+th:first-child,
+td:first-child { padding: .8rem; }
+th:last-child,
+td:last-child { padding: .8rem; }
+.docs-nav ul ul {
+  font-weight: normal;
+  margin: 1.5rem 0 1.5rem 1.2rem;
+  font-size: 90%;
+}
+.docs-nav ul {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.back-to-top {
+  float: right;
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+.code-block {
+  display: inline-block;
+  background-color: #DDD;
+  border-radius: 0.3rem;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 0 .5rem;
+  margin: 0 0 -.5rem;
+  overflow-x: hidden;
+}
+.code-block.padded {
+  padding: 1rem;
+  margin: 1rem 0 2rem;
+  overflow-x: visible;
+}
+.code-block.padded-alt {
+  padding: 1rem;
+  margin: 0rem 0 2rem;
+  overflow-x: visible;
+}
+.code-block.delete { color: #fff; background-color: red; }
+.code-block.get { color: #fff; background-color: green; }
+.code-block.post { color: #fff; background-color: blue;}
+.code-block.put { color: #fff; background-color: gold;}
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nav-wrap {
+  padding: 4rem 0 0;
+  margin: 0 0 -4rem 0;
+  text-align: center;
+}
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navigation li { display: inline; }
+.navigation li a.active { font-weight: bold; }
+.navigation li a {
+  text-decoration: none;
+  padding: 0 1rem;
+  color: #666;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+.navigation li a:hover { color: #999; }
+.logo {
+  letter-spacing: .5rem;
+  color: #666;
+  text-align: center;
+}
+.logo-sub { font-family: 'Open Sans', sans-serif; }
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 10rem 0;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+
+/* –––––––––––––––––– Home Page –––––––––––––––––––*/
+
+/* Main Cover
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.tagline-wrap {
+  text-align: center;
+  position: relative;
+}
+.logo-text {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.tagline { font-size: 2rem; }
+.computer-wrap { position: relative; }
+.computer {
+  position: relative;
+  max-width: 100%;
+  margin: 4rem auto -12rem;
+}
+
+/* Epoch Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.epoch-section {
+  background-image: url('../images/bg-mobile.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 8rem 0;
+}
+.epoch-icon {
+  margin-bottom: .5rem;
+  color: #11DFC7;
+}
+.epoch-heading { margin-bottom: .3rem; }
+.epoch-description {
+  opacity: .8;
+  font-weight: 300;
+}
+.epoch-description a { color: #fff; }
+
+/* Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  background-image: url('../images/bg-mobile.jpg');
+  background-size: cover;
+  color: #fff;
+}
+.categories .section-description { margin-bottom: 4rem; }
+
+
+/* –––––––––––––––––– Docs Page –––––––––––––––––––*/
+
+.docs { text-align: left; }
+.docs h6, .docs h5 {
+  color: #000;
+  font-weight: bold;
+  border-bottom: 1px solid #eaeaea;
+}
+.docs h6 { border: 0; font-size: 1.8rem;}
+.docs-nav { display: none; }
+.docs-nav.fixed { position: fixed; }
+.docs-content {
+  float:right;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: .3rem;
+  padding: 3rem;
+}
+.docs-content div {
+  color: #777;
+}
+.spacing-fix { margin-top: -1.5rem; }
+.docs-image { max-width: 100%; }
+
+/* ------------------ API PAGE ------------------------*/
+
+
+/* –––––––––––––––––– Media Queries –––––––––––––––––––*/
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .logo { text-align: left; }
+  .epoch-section { background-image: url('../images/bg.jpg'); }
+  .categories { background-image: url('../images/bg.jpg'); }
+  .nav-wrap { text-align: right; }
+  .tagline-wrap { text-align: left; }
+  .logo-text { font-size: 3.5rem; }
+  .tagline { font-size: 2rem; }
+  .computer { margin: 0 auto -12rem; }
+  .docs-nav { display: block; }
+  .spacing-fix { margin-top: 0; }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .logo-text { font-size: 4rem; }
+  .tagline { font-size: 2.5rem; }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .logo-text { font-size: 4.5rem; }
+  .tagline { font-size: 3rem; }
+  .three.columns.docs-nav { width: 13.3333333333%; }
+  .nine.columns.docs-content { width: 82.6666666667%; }
+}
