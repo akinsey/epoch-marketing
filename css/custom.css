@@ -96,6 +96,12 @@ footer {
   color: #666;
   margin-top: -3.5rem;
 }
+#side-menu li .active a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.api #side-menu li ul { display: none; }
+.api #side-menu li.active-parent ul, #side-menu li.active ul { display: block; }
 
 /* –––––––––––––––––– Home Page –––––––––––––––––––*/
 
@@ -182,7 +188,6 @@ footer {
 }
 .spacing-fix { margin-top: -1.5rem; }
 .docs-image { max-width: 100%; }
-
 
 /* –––––––––––––––––– Media Queries –––––––––––––––––––*/
 
