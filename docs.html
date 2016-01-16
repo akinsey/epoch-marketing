@@ -73,7 +73,6 @@
                 <li><a href="#planned-features">Planned Features</a></li>
               </ul>
             </li>
-            <li><a href="#planned-changes">Planned Changes</a></li>
             <li><a href="#feedback">Feedback</a></li>
             <li><a href="#license">License</a></li>
           </ul>
@@ -86,17 +85,20 @@
               <strong>Warning this project is under active development, design is subject to change</strong>
             </p>
             <p>
-              Next generation forum software. Epochtalk is a forum frontend designed to be paired with the <a href="https://github.com/epochtalk/core-pg">core-pg</a> backend. Epochtalk forum software utilizes technologies such as <a href="https://angularjs.org">AngularJS</a>, <a href="https://www.npmjs.org/package/browserify">Browserify</a>, <a href="https://github.com/postgres/postgres">Postgres</a> and <a href="http://foundation.zurb.com">Foundation</a> for improved performance and user experience as compared to existing forum software.
+              Next generation forum software. Epochtalk is a forum frontend designed to be paired with the <a href="https://github.com/epochtalk/core-pg">core-pg</a> backend. Epochtalk forum software utilizes technologies such as <a href="https://angularjs.org">AngularJS</a>, <a href="https://webpack.github.io">Webpack</a>, <a href="https://github.com/postgres/postgres">Postgres</a> and <a href="http://bourbon.io">Bourbon</a> for improved performance and user experience as compared to existing forum software.
             </p>
+            <img class="docs-image" src="images/homepage.png" /><br /><br />
           </div>
 
           <div id="features">
             <h5>Features<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
             <ul>
               <li>Epochtalk is a single page web application created with <a href="https://angularjs.org">AngularJS</a></li>
-              <li>Web/Mobile ready responsive design using <a href="http://foundation.zurb.com">Foundation</a></li>
-              <li>JavaScript and CSS is bundled and minimized for performance using <a href="https://www.npmjs.org/package/browserify">Browserify</a> and <a href="https://www.npmjs.org/package/uglify-js">Uglify-js</a></li>
-              <li>Designed with performance in mind. Epochtalk's backend, <a href="https://github.com/epochtalk/core-pg">core-pg</a>, utilizes <a href="http://www.postgresql.org/">Postgres</a> as a database.</li>
+              <li>Web/Mobile ready responsive design using <a href="http://bourbon.io">Bourbon</a></li>
+              <li>Code is bundled and loaded as needed, for performance, using <a href="https://webpack.github.io">Webpack</a></li>
+              <li>Designed with performance in mind. Epochtalk's backend, <a href="https://github.com/epochtalk/core-pg">epochtalk-core-pg</a>, utilizes <a href="http://www.postgresql.org/">Postgres</a> as a database.</li>
+              <li>Customizable Theming (Branding, coloring, fonts, sizes)</li>
+              <li>Fully modular permissions system with roles</li>
             </ul>
           </div>
 
@@ -110,22 +112,23 @@
                 <li><a href="https://www.npmjs.org/doc/README.html">npm</a> (pre-packaged with node)</li>
                 <li><a href="https://github.com/bower/bower">bower</a></li>
                 <li><a href="http://www.postgresql.org">PostgreSQL</a></li>
-                <li><a href="http://ddollar.github.io/foreman">foreman</a></li>
+                <li><a href="http://redis.io">Redis</a></li>
               </ul>
             </div>
 
             <div id="bower">
               <h6>Bower</h6>
               <ul>
-                <li>angular <pre class="code-block">1.3.14</pre></li>
-                <li>angular-sanitize <pre class="code-block">1.3.14</pre></li>
-                <li>angular-resource <pre class="code-block">1.3.14</pre></li>
-                <li>angular-animate <pre class="code-block">1.3.14</pre></li>
+                <li>angular <pre class="code-block">1.4.4</pre></li>
+                <li>angular-sanitize <pre class="code-block">1.4.4</pre></li>
+                <li>angular-resource <pre class="code-block">1.4.4</pre></li>
+                <li>angular-animate <pre class="code-block">1.4.4</pre></li>
                 <li>angular-loading-bar <pre class="code-block">0.7.1</pre></li>
-                <li>foundation <pre class="code-block">5.5.1</pre></li>
                 <li><a href="http://github.com/slickage/Nestable">nestable</a></li>
                 <li>angular-ui-router <pre class="code-block">~0.2.15</pre></li>
-                <li>angular-ui-router-title <pre class="code-block">0.0.3</pre></li>
+                <li>angular-sortable-view <pre class="code-block">~0.0.13</pre></li>
+                <li>ng-tags-input <pre class="code-block">3.0.0</pre></li>
+                <li>jquery <pre class="code-block">~2.1.4</pre></li>
               </ul>
             </div>
 
@@ -134,53 +137,57 @@
               <div class="row">
                 <div class="one-third column">
                   <ul>
-                    <li>async <pre class="code-block">^0.9.0</pre></li>
                     <li>aws-sdk <pre class="code-block">^2.1.20</pre></li>
                     <li>bcrypt <pre class="code-block">^0.8.0</pre></li>
                     <li>bluebird <pre class="code-block">^2.6.4</pre></li>
                     <li>boom <pre class="code-block">^2.6.1</pre></li>
-                    <li>brfs <pre class="code-block">^1.3.0</pre></li>
-                    <li>browserify <pre class="code-block">^8.1.3</pre></li>
+                    <li>bower <pre class="code-block">^1.5.2</pre></li>
+                    <li>change-case <pre class="code-block">^2.3.0</pre></li>
                     <li>cheerio <pre class="code-block">^0.18.0</pre></li>
                     <li>commander <pre class="code-block">^2.5.1</pre></li>
                     <li>db-migrate <pre class="code-block">^0.8.0</pre></li>
                     <li>deep-rename-keys <pre class="code-block">^0.1.0</pre></li>
+                    <li>del <pre class="code-block">^2.2.0</pre></li>
                     <li>dot <pre class="code-block">^1.0.3</pre></li>
+                    <li>dotenv <pre class="code-block">^1.2.0</pre></li>
                     <li>epochtalk-bbcode-parser <pre class="code-block">^1.0.0</pre></li>
-                    <li>epochtalk-core-pg <pre class="code-block">^0.9.11</pre></li>
-                    <li>fs-extra <pre class="code-block">^0.16.5</pre></li>
+                    <li>epochtalk-core-pg <pre class="code-block">epochtalk/core-pg</pre></li>
                   </ul>
                 </div>
                 <div class="one-third column spacing-fix">
                   <ul>
-                    <li>good <pre class="code-block">^5.1.1</pre></li>
-                    <li>good-console <pre class="code-block">^4.1.0</pre></li>
-                    <li>good-file <pre class="code-block">^4.0.1</pre></li>
-                    <li>hapi <pre class="code-block">^8.2.0</pre></li>
-                    <li>hoek <pre class="code-block">^2.12.0</pre></li>
-                    <li>joi <pre class="code-block">^6.0.8</pre></li>
-                    <li>json <pre class="code-block">^9.0.3</pre></li>
-                    <li>jsonwebtoken <pre class="code-block">^5.0.0</pre></li>
-                    <li>levelup <pre class="code-block">^0.19.0</pre></li>
-                    <li>lodash <pre class="code-block">^2.4.1</pre></li>
-                    <li>lout <pre class="code-block">^6.1.0</pre></li>
-                    <li>medium-editor <pre class="code-block">^1.8.14</pre></li>
-                    <li>memdown <pre class="code-block">^0.11.0</pre></li>
-                    <li>mkdirp <pre class="code-block">^0.5.0</pre></li>
-                    <li>mmmagic <pre class="code-block">^0.3.11</pre></li>
+                  <li>fs-extra <pre class="code-block">^0.16.5</pre></li>
+                  <li>good <pre class="code-block">^5.1.1</pre></li>
+                  <li>good-console <pre class="code-block">^4.1.0</pre></li>
+                  <li>good-file <pre class="code-block">^4.0.1</pre></li>
+                  <li>handlebars <pre class="code-block">^4.0.3</pre></li>
+                  <li>hapi <pre class="code-block">^8.8.1</pre></li>
+                  <li>hoek <pre class="code-block">^2.12.0</pre></li>
+                  <li>html-loader <pre class="code-block">^0.3.0</pre></li>
+                  <li>ip-address <pre class="code-block">^5.0.2</pre></li>
+                  <li>joi <pre class="code-block">^6.0.8</pre></li>
+                  <li>json <pre class="code-block">^9.0.3</pre></li>
+                  <li>jsonwebtoken <pre class="code-block">^5.0.0</pre></li>
+                  <li>lodash <pre class="code-block">^3.10.1</pre></li>
+                  <li>mkdirp <pre class="code-block">^0.5.0</pre></li>
+                  <li>mmmagic <pre class="code-block">^0.3.11</pre></li>
                   </ul>
                 </div>
                 <div class="one-third column spacing-fix">
                   <ul>
-                    <li>node-sass <pre class="code-block">^2.1.1</pre></li>
-                    <li>node-uuid <pre class="code-block">^1.4.1</pre></li>
-                    <li>nodemailer <pre class="code-block">^1.3.2</pre></li>
-                    <li>pg <pre class="code-block">^4.2.0</pre></li>
-                    <li>request <pre class="code-block">^2.53.0</pre></li>
-                    <li>sanitize-html <pre class="code-block">^1.4.3</pre></li>
-                    <li>stream-meter <pre class="code-block">^1.0.3</pre></li>
-                    <li>through2 <pre class="code-block">^0.6.3</pre></li>
-                    <li>yargs <pre class="code-block">^1.2.1</pre></li>
+                  <li>node-sass <pre class="code-block">^3.4.2</pre></li>
+                  <li>node-uuid <pre class="code-block">^1.4.1</pre></li>
+                  <li>nodemailer <pre class="code-block">^1.3.2</pre></li>
+                  <li>oclazyload <pre class="code-block">^1.0.6</pre></li>
+                  <li>pg <pre class="code-block">^4.2.0</pre></li>
+                  <li>redis <pre class="code-block">^0.12.1</pre></li>
+                  <li>request <pre class="code-block">^2.53.0</pre></li>
+                  <li>rolling-rate-limiter <pre class="code-block">^0.1.2</pre></li>
+                  <li>sanitize-html <pre class="code-block">^1.4.3</pre></li>
+                  <li>stream-meter <pre class="code-block">^1.0.3</pre></li>
+                  <li>through2 <pre class="code-block">^0.6.3</pre></li>
+                  <li>webpack <pre class="code-block">^1.12.2</pre></li>
+                  <li>yargs <pre class="code-block">^1.2.1</pre></li>
                   </ul>
                 </div>
               </div>
@@ -196,19 +203,20 @@
             <pre class="code-block padded twelve columns">$ cd epochtalk
 $ npm install</pre><br />
 
-            <strong>3) Install frontend dependencies using <a href="https://github.com/bower/bower">bower</a></strong><br />
+            <strong>3) Copy the example.env file</strong><br />
+            This file specifies the server configurations and is necessary to run the server.  You can edit the .env file later to specify the configurations as outlined in the Configuration section. <br /><br />
+
+            <strong>4) Install frontend dependencies using <a href="https://github.com/bower/bower">bower</a></strong><br />
             <pre class="code-block padded twelve columns">$ bower install</pre><br />
 
-            <strong>4) Run the Epochtalk CLI tool</strong><br />
+            <strong>5) Run the Epochtalk CLI tool</strong><br />
             First ensure that <a href="http://www.postgresql.org/">PostgreSQL</a> is installed and running. Before running Epochtalk for the first time, it is necessary to setup the database and first user account. The CLI tool will create the first board and admin account for the fourm. From the root directory of the project run the following command:
             <pre class="code-block padded twelve columns">$ node cli/index.js --create</pre><br />
 
-            <strong>5) Start the Epochtalk server</strong><br />
-            Ensure that <a href="http://ddollar.github.io/foreman">foreman</a> is installed. Upon running the <pre class="code-block">foreman start</pre> command Epochtalk will start its webserver and compile all JavaScript and css. Once compilation is complete the forum can be viewed at <pre class="code-block">http://localhost:8080</pre>
-            <pre class="code-block padded twelve columns">$ foreman start -f Procfile.dev #for development
-$ foreman start -f #for production</pre><br />
+            <strong>6) Start the Epochtalk server</strong><br />
+            Running the <pre class="code-block">npm run serve</pre> command will start the Epochtalk webserver and compile all JavaScript and css. Once the server is running, the forum can be viewed at <pre class="code-block">http://localhost:8080</pre><br /><br />
 
-            <strong>6) Login and change admin account information</strong><br />
+            <strong>7) Login and change admin account information</strong><br />
             Login to the admin account using the username <pre class="code-block">admin</pre> and password <pre class="code-block">admin1234</pre>. Visit your profile by clicking the link in the top right corner of the page, then change your username and password.<br /><br /><br />
 
             <strong>Trouble Shooting</strong><br />
@@ -221,39 +229,14 @@ $ foreman start -f #for production</pre><br />
 
             <div id="manual">
               <h6>Manual</h6>
-              <p>
-                The forum configs can be set manually with a <a href="http://ddollar.github.io/foreman/#ENVIRONMENT">.env</a> file in the root directory of the project.
-              </p>
-              <pre class="code-block padded twelve columns">HOST=localhost
-PORT=8080
-LOG_ENABLED=true
-PUBLIC_URL=http://localhost:8080
-PRIVATE_KEY=Change this to something more secure
-VERIFY_REGISTRATION=false
-LOGIN_REQUIRED=false
-WEBSITE_TITLE=Epochtalk Forums
-WEBSITE_DESCRIPTION=Open source forum software
-WEBSITE_KEYWORDS=open source, free forum, forum software, forum
-WEBSITE_LOGO=
-WEBSITE_FAVICON=
-EMAILER_SENDER=info@example.com
-EMAILER_HOST=smtp.gmail.com
-EMAILER_PORT=465
-EMAILER_USER=username
-EMAILER_PASS=password
-EMAILER_SECURE=true
-IMAGES_STORAGE=local
-IMAGES_MAX_SIZE=10485760
-IMAGES_EXPIRATION=7200000
-IMAGES_INTERVAL=900000
-IMAGES_LOCAL_DIR=/public/images
-IMAGES_LOCAL_PATH=/static/images
-IMAGES_S3_ROOT=http://some.where
-IMAGES_S3_DIR=images/
-IMAGES_S3_BUCKET=bukkit
-IMAGES_S3_REGION=region
-IMAGES_S3_ACCESS_KEY=testkey
-IMAGES_S3_SECRET_KEY=testkey</pre>
+              <p>The forum server configs can and must be set manually with a .env file in the root directory of the project.</p>
+              <pre class="code-block padded twelve columns">DATABASE_URL="postgres://localhost/epochtalk_dev"
+HOST="localhost"
+PORT="8080"
+PUBLIC_URL="http://localhost:8080"
+REDIS_HOST="localhost"
+REDIS_PORT="6379"
+REDIS_AUTH_PASS=""</pre>
             </div>
             <div class="clear-fix" id="admin-panel">
               <h6>Admin Panel</h6>
@@ -295,15 +278,6 @@ IMAGES_S3_SECRET_KEY=testkey</pre>
                 <li>Full feature compatibility across all input methods (BBCode, Medium, Markdown)</li>
               </ul>
             </div>
-          </div>
-
-          <div id="planned-changes">
-            <h5>Planned Changes<a class="back-to-top" href="#top"><i class="fa fa-arrow-up"> <span>Back to Top</span></i></a></h5>
-            <ul>
-              <li>Redesign of frontend user interface (Current UI is temporary). Design is currently a low priority until the all the forum features are fully fleshed out.</li>
-              <li>Dockerizing Epochtalk</li>
-            </ul>
-            <p>To see planned backend changes, visit the core-pg <a href="https://github.com/epochtalk/core-pg/issues">issues page</a>.</p>
           </div>
 
           <div id="feedback">

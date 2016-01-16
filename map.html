@@ -83,51 +83,42 @@
               <div class="row">
                 <div class="one-third column">
                   <ul>
-                    <li>Operations</li>
-                    <li>Switch from Napa to Bower</li>
-                    <li>CLI Tool for deployment</li>
-                    <li>Default to no validation on registration</li>
-                    <li>Pulled in Image Server, Emailer, Validation, and API projects</li>
-                    <li>Various Bug Fixes</li>
-                    <li>General</li>
-                    <li>Dynamic Page Titles</li>
-                    <li>Alert Service for user</li>
-                    <li>Angular updated to 1.3.14</li>
-                    <li>UI-Router updated to 0.2.13</li>
-                    <li>JWT Updated to fix latest CVE</li>
-                    <li>Admin Panel</li>
-                    <li>Ban/UnBan Users</li>
-                    <li>Reporting w/ Report Notes</li>
+                    <li>Custom User Roles with modular ACLs</li>
+                    <li>CSS Theming via Admin Panel</li>
+                    <li>Recent Threads and Recently Posted In Threads</li>
+                    <li>Advanced Settings Section</li>
+                    <li>Rate Limiting of Routes</li>
+                    <li>IP Blacklisting</li>
+                    <li>Watchlist for Boards and Threads</li>
+                    <li>Complete redesign of theme</li>
+                    <li>Mobile compatibility</li>
+                    <li>Thread Polls</li>
                   </ul>
                 </div>
                 <div class="one-third column spacing-fix">
                   <ul>
-                    <li>Adding Admin/Mods</li>
-                    <li>Moderate Users/Posts</li>
-                    <li>Preview Users/Posts</li>
-                    <li>Update Server Setting</li>
-                    <li>Threads</li>
-                    <li>Moving</li>
-                    <li>Sticky</li>
-                    <li>Locking</li>
-                    <li>Posts</li>
-                    <li>Permalinks</li>
+                    <li>Switched From Browserify to Webpack</li>
+                    <li>Moved from MemDB to Redis</li>
+                    <li>Basic Private Messaging</li>
+                    <li>Adding User Roles</li>
+                    <li>Assigning Board Moderators</li>
+                    <li>Moderation of Users/Posts/Messages</li>
+                    <li>Moderation view functionality implemented</li>
+                    <li>Preview of Users/Posts/Messages</li>
+                    <li>Update Server Configurations</li>
                     <li>Tooltips on Icons</li>
-                    <li>Highlighting Post by admin/mods</li>
-                    <li>Editor</li>
-                    <li>Fullscreen mode</li>
-                    <li>Formatting tips window</li>
                   </ul>
                 </div>
                 <div class="one-third column spacing-fix">
                   <ul>
-                    <li>Progress bar on image upload</li>
-                    <li>Profiles</li>
-                    <li>Full BBCode support in signature</li>
-                    <li>Avatar image uploading</li>
-                    <li>Core-PG</li>
+                    <li>Self Moderated Threads</li>
+                    <li>Highlighting Posts by Admin/Mods</li>
+                    <li>Editor enhancements</li>
+                    <li>Updated to Angular 1.4.4</li>
+                    <li>Banning/Unbanning now restricts access</li>
                     <li>Various Bug Fixes</li>
-                    <li>Transactions on modifying methods</li>
+                    <li>Private Boards and Categories</li>
+                    <li>Internal Plugin Engine</li>
                   </ul>
                 </div>
               </div>
@@ -136,11 +127,11 @@
             <div id="active">
               <h6>Actively Developing</h6>
               <ul>
-                <li>Deleting Boards/Threads/Posts</li>
-                <li>Full ACL system for user roles</li>
-                <li>Board tagging/Mapping</li>
-                <li>Thread Polls</li>
-                <li>Update Angular to 1.4 release</li>
+                <li>Threads in multiple boards</li>
+                <li>PM restricted to admins/mods only when banned</li>
+                <li>Moderation Log</li>
+                <li>Refactor ACL System</li>
+                <li>Notification System</li>
               </ul>
             </div>
 
@@ -176,32 +167,25 @@
                   <ul>
                     <li>Trust System</li>
                     <li>Activity System</li>
-                    <li>Board Moderators</li>
                     <li>User online system</li>
                     <li>News Banner</li>
                     <li>Revised build system</li>
-                    <li>Private Boards</li>
                     <li>Internal Search Engine</li>
                     <li>Revised Avatar image handling</li>
                     <li>Emoji support</li>
                     <li>Post History</li>
-                    <li>2-Factor Authentication</li>
-                    <li>Onboarding System</li>
-                    <li>Switch over from MemDB to Redis</li>
                   </ul>
                 </div>
                 <div class="one-third column spacing-fix">
                   <ul>
-                    <li>Self Moderated Threads</li>
-                    <li>Private Messages</li>
+                    <li>2-Factor Authentication</li>
                     <li>Hiding/Ignoring Users/Boards/Threads</li>
                     <li>Subscriptions</li>
                     <li>Analytics Engine</li>
-                    <li>Theme Engine</li>
-                    <li>Plugin Engine</li>
                     <li>Markdown Support</li>
                     <li>User Preference service</li>
                     <li>Docker Support</li>
+                    <li>Onboarding System</li>
                   </ul>
                 </div>
                 <div class="one-third column spacing-fix">&nbsp;</div>
@@ -215,13 +199,48 @@
 
             <div id="v0-3-0">
               <h6>Version 0.3.0</h6>
-              <ul>
-                <li>DB-Migrate integration</li>
-                <li>Switch DB to Postgres</li>
-                <li>Updated JWT integration</li>
-                <li>Root route defaults to /boards</li>
-                <li>Various operation bug fixes</li>
-              </ul>
+              <div class="row">
+                <div class="one-third column">
+                  <ul>
+                    <li>Switched from Napa to Bower</li>
+                    <li>CLI Tool for deployment</li>
+                    <li>Default to no validation on registration</li>
+                    <li>Pulled in Image Server, Emailer, Validation, and API projects</li>
+                    <li>Various Bug Fixes</li>
+                    <li>General</li>
+                    <li>Dynamic Page Titles</li>
+                    <li>Alert Service for user</li>
+                    <li>Angular updated to 1.3.14</li>
+                    <li>UI-Router updated to 0.2.13</li>
+                    <li>JWT Updated to fix latest CVE</li>
+                    <li>Admin Panel</li>
+                  </ul>
+                </div>
+                <div class="one-third column spacing-fix">
+                  <ul>
+                    <li>Reporting w/ Report Notes</li>
+                    <li>DB-Migrate integration</li>
+                    <li>Switch DB to Postgres</li>
+                    <li>Updated JWT integration</li>
+                    <li>Root route defaults to /boards</li>
+                    <li>Various operation bug fixes</li>
+                    <li>Threads</li>
+                    <li>Moving</li>
+                    <li>Sticky</li>
+                    <li>Locking</li>
+                    <li>Permalinks</li>
+                    <li>Fullscreen mode</li>
+                  </ul>
+                </div>
+                <div class="one-third column spacing-fix">
+                  <li>Formatting tips window</li>
+                  <li>Progress bar on image upload</li>
+                  <li>Profiles</li>
+                  <li>Transactions on modifying methods</li>
+                  <li>Full BBCode support in signature</li>
+                  <li>Avatar image uploading</li>
+                </div>
+              </div>
             </div>
 
             <div id="v0-2-0">
